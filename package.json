@@ -1,82 +1,44 @@
 {
-  "_from": "git://github.com/DarkPayCoin/bitcore-mnemonic.git",
-  "_id": "bitcore-mnemonic@1.7.0",
-  "_inBundle": false,
-  "_integrity": "",
-  "_location": "/bitcore-mnemonic",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "git",
-    "raw": "bitcore-mnemonic@git://github.com/DarkPayCoin/bitcore-mnemonic.git",
-    "name": "bitcore-mnemonic",
-    "escapedName": "bitcore-mnemonic",
-    "rawSpec": "git://github.com/DarkPayCoin/bitcore-mnemonic.git",
-    "saveSpec": "git://github.com/DarkPayCoin/bitcore-mnemonic.git",
-    "fetchSpec": "git://github.com/DarkPayCoin/bitcore-mnemonic.git",
-    "gitCommittish": null
-  },
-  "_requiredBy": [
-    "/bitcore-wallet-client"
-  ],
-  "_resolved": "git://github.com/DarkPayCoin/bitcore-mnemonic.git#f1892184d2b61270c8dee047a5367a7f37851d0a",
-  "_spec": "bitcore-mnemonic@git://github.com/DarkPayCoin/bitcore-mnemonic.git",
-  "_where": "/home/piadmin/Bureau/DarkPay-PART/TEST/copay/node_modules/bitcore-wallet-client",
-  "author": {
-    "name": "BitPay",
-    "email": "dev@bitpay.com"
-  },
-  "bugs": {
-    "url": "https://github.com/bitpay/bitcore-mnemonic/issues"
-  },
-  "bundleDependencies": false,
-  "contributors": [
+  "name": "bitcore-mnemonic",
+  "version": "1.7.0",
+  "description": "BIP39 Mnemonics implemented for Bitcore.",
+  "author": "BitPay <dev@bitpay.com>",
+  "main": "index.js",
+  "scripts": {
+    "lint": "gulp lint",
+    "test": "gulp test",
+    "coverage": "gulp coverage",
+    "build": "gulp"
+    },
+   "contributors": [
     {
       "name": "Yemel Jardi",
-      "email": "angel.jardi@gmail.com"
-    },
-    {
-      "name": "Matias Alejo Garcia",
       "email": "ematiu@gmail.com"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitpay/bitcore-mnemonic.git"
+     },
+  "keywords": [
+    "bitcoin",
+    "bitcore",
+    "encryption"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "bitcore-build": "https://github.com/bitpay/bitcore-build.git#1023e8a99cd42b9241ccafe8e34c52f308c10284",
+    "brfs": "^2.0.1",
+    "mocha": "^5.2.0"
+  },
   "dependencies": {
     "bitcore-lib": "^0.16.0",
     "bitcore-lib-cash": "^0.19.0",
     "darkpay-bitcore-lib": "git://github.com/DarkPayCoin/darkpay-bitcore-lib.git",
     "unorm": "^1.4.1"
   },
-  "deprecated": false,
-  "description": "BIP39 Mnemonics implemented for Bitcore.",
-  "devDependencies": {
-    "assert": "^1.4.1",
-    "bitcore-build": "git+https://github.com/bitpay/bitcore-build.git#1023e8a99cd42b9241ccafe8e34c52f308c10284",
-    "brfs": "^2.0.1",
-    "mocha": "^5.2.0"
-  },
-  "homepage": "https://github.com/bitpay/bitcore-mnemonic#readme",
-  "keywords": [
-    "bitcoin",
-    "bitcore",
-    "mnemonic",
-    "crypto",
-    "cryptography",
-    "encryption"
-  ],
-  "license": "MIT",
-  "main": "index.js",
-  "name": "bitcore-mnemonic",
   "peerDependencies": {
     "bitcore-lib": "^0.16.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bitpay/bitcore-mnemonic.git"
-  },
-  "scripts": {
-    "build": "gulp",
-    "coverage": "gulp coverage",
-    "lint": "gulp lint",
-    "test": "gulp test"
-  },
-  "version": "1.7.0"
+  }
 }
